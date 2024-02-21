@@ -48,7 +48,7 @@ public class UserController {
         return new ResponseEntity<>(createdUser, HttpStatus.CREATED); //201
     }
 
-    @GetMapping("/surname{user_surname}")
+    @GetMapping("/surname/{user_surname}")
     public List<User> getBySurname(@PathVariable("user_surname") String surname){
         return service.getBySurname(surname);
     }
