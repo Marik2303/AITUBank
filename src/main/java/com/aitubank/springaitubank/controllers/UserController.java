@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("users")
 public class UserController {
-    @GetMapping("ruslan")
+
+    @GetMapping("auth")
     public String sayHello(){
         return "AITUBank.kz";
     }
