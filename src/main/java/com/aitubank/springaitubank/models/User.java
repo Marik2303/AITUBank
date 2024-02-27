@@ -2,6 +2,7 @@ package com.aitubank.springaitubank.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 
 @Data
 @Entity
@@ -14,5 +15,4 @@ public class User {
     private String surname;
     private boolean gender;
     private String password;
-    private  int balance;
 }
