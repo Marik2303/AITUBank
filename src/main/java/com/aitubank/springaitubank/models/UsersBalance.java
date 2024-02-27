@@ -1,6 +1,5 @@
 package com.aitubank.springaitubank.models;
 
-
 import jakarta.persistence.*;
 import lombok.Data;
 

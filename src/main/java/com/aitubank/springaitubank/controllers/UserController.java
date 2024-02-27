@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("users")
+@RequestMapping("aitubank.kz")
 public class UserController {
 
     private final UserServicesInterface service;
