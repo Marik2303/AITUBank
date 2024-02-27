@@ -1,4 +1,4 @@
 package com.aitubank.springaitubank.controllers;
 
-public class usersBalanceController {
+public class UsersBalanceController {
 }
