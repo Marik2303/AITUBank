@@ -4,7 +4,6 @@ package com.aitubank.springaitubank.controllers;
 import com.aitubank.springaitubank.models.User;
 import com.aitubank.springaitubank.services.Interfaces.UserServicesInterface;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
