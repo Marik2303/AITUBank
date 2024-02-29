@@ -9,6 +9,8 @@ import lombok.Data;
 public class UsersBalance {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private double balance;
+
+    private int id; // Уникальный идентификатор баланса пользователя
+
+    private double balance;   //// Баланс пользователя
 }
