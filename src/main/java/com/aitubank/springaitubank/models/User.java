@@ -10,10 +10,14 @@ import lombok.Data;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String name;
+    private int id;   //Выдаем юзеру айдишку
+
+    private String name;   //Выдаем юзеру имя
+
     private String surname;
+
     private boolean gender;
+
     private String password;
 
 }
