@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class User_16_numbers_controller {
 
-    private final UserServicesInterface service;
+    private final UserServicesInterface service; //Ссылка на сервис для работы с данными пользователей
+
+    // Конструктор контроллера, принимающий сервис в качестве аргумента
 
     public User_16_numbers_controller(UserServicesInterface service){
         this.service = service;
