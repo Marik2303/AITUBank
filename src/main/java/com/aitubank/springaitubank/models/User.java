@@ -3,6 +3,9 @@ package com.aitubank.springaitubank.models; // Объявляем пакет в 
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @Entity
 @Table(name = "users")
@@ -20,6 +23,7 @@ public class User {
 
     private String password; //Выдаем юзеру пароль
 
-
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Users_16_numbers> users16NumbersList = new ArrayList<Users_16_numbers>();
 
 }

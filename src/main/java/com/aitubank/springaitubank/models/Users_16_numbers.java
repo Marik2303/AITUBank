@@ -13,4 +13,8 @@ public class Users_16_numbers {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String sixteenNumbers;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "sixteenNumbers_id")
+    private User user;
 }
