@@ -11,7 +11,11 @@ public class UsersBalance {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private int id; // Уникальный идентификатор баланса пользователя
+    private int id;
 
-    private double balance;   //// Баланс пользователя
+    private double balance;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "balance_id")
+    private User user;
+
 }
