@@ -11,7 +11,7 @@ import java.util.List;
 @Table(name = "users")
 
 public class User {
-    @Id //Первичный ключ
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;   //Выдаем юзеру айдишку
 
@@ -24,6 +24,6 @@ public class User {
     private String password; //Выдаем юзеру пароль
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Users_16_numbers> users16NumbersList = new ArrayList<Users_16_numbers>();
+    private List<Users_16_numbers> users_16_numbersList = new ArrayList<Users_16_numbers>();
 
 }
