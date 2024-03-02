@@ -14,7 +14,7 @@ public class Users_16_numbers {
     private int id;
     private String sixteenNumbers;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "sixteenNumbers_id")
     private User user;
 }

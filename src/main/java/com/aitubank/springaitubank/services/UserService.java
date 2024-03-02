@@ -1,5 +1,11 @@
 package com.aitubank.springaitubank.services;
 
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
+
+
+
+
 import com.aitubank.springaitubank.models.User;
 import com.aitubank.springaitubank.repositories.UserRepositoriyInterface;
 import com.aitubank.springaitubank.services.Interfaces.UserServicesInterface;
